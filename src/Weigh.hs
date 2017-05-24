@@ -52,12 +52,12 @@ module Weigh
   where
 
 import Control.Applicative
-import Control.Arrow
+import Control.Arrow (first, second)
 import Control.DeepSeq
-import Control.Monad.State
+import Control.Monad.State (State, execState, modify, unless)
 import Data.List
 import Data.List.Split
-import Data.Maybe
+import Data.Maybe (mapMaybe)
 import GHC.Int
 import GHC.Stats
 import Prelude
